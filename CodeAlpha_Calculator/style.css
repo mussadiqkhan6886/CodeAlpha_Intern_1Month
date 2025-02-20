@@ -24,6 +24,8 @@ header{
     height: 50%;
     margin-top: 2em;
     border-radius: 5px;
+    box-shadow: 1px 1px 15px black,
+    1px 1px 15px white;
 }
 .calculator{
     background-color: rgb(72, 116, 116);
@@ -48,15 +50,25 @@ input{
     background-color: rgb(214, 217, 219);
     box-shadow: inset 1px 1px 2px black,
     inset 1px 1px 2px white;
-    padding-left: 10px;
-    font-size: 1.4em;
+    padding-right: 8px;
+    font-size: 1.8em;
     letter-spacing: 1px;
+    text-align: right;
 }
 .controls{
     height: 68%;
     padding-top: 1em;
     margin-top: 1em;
     border-top: 2px double black;
+    position: relative;
+}
+.controls::before{
+    content: 'MussadiqKhan';
+    position: absolute;
+    top: 3px;
+    font-size: 0.5rem;
+    color: white;
+    letter-spacing: 1px;
 }
 .buttons{
     height: 100%;
@@ -65,6 +77,7 @@ input{
     padding: 0.3em;
     gap: 0.2em;
     background-color: darkslategray;
+    box-shadow: inset 1px 1px 2px black;
 }
 .buttons button{
     border: none;
@@ -79,16 +92,19 @@ input{
     grid-column: 1 / 5;
     margin: 0 0.3em;
     background-color: red;
+    text-transform: capitalize;
 }
 .buttons #reset{
     background-color: white;
     color: black;
 }
 .buttons .operator{
-    background-color: orange;
+    color: rgb(223, 146, 3);
+    font-size: 1.5rem;
 }
 .buttons button:hover{
     cursor: pointer;
+    filter: brightness(150%);
 }
 .buttons button:active{
     box-shadow: inset 1px 1px 2px black;
