@@ -20,22 +20,24 @@
             <div class="controls">
                 <div class="buttons">
                     <button class="operator" onclick="addToDisplay('*')">x</button>
-                    <button onclick="addToDisplay('9')">9</button>
-                    <button onclick="addToDisplay('8')">8</button>
-                    <button onclick="addToDisplay('7')">7</button>
+                    <button class="number" onclick="addToDisplay('9')">9</button>
+                    <button class="number"  onclick="addToDisplay('8')">8</button>
+                    <button class="number"  onclick="addToDisplay('7')">7</button>
                     <button class="operator" onclick="addToDisplay('-')">-</button>
-                    <button onclick="addToDisplay('6')">6</button>
-                    <button onclick="addToDisplay('5')">5</button>
-                    <button onclick="addToDisplay('4')">4</button>
+                    <button class="number"  onclick="addToDisplay('6')">6</button>
+                    <button class="number"  onclick="addToDisplay('5')">5</button>
+                    <button class="number"  onclick="addToDisplay('4')">4</button>
                     <button class="operator" onclick="addToDisplay('+')">+</button>
-                    <button onclick="addToDisplay('3')">3</button>
-                    <button onclick="addToDisplay('2')">2</button>
-                    <button onclick="addToDisplay('1')">1</button>
+                    <button class="number"  onclick="addToDisplay('3')">3</button>
+                    <button class="number"  onclick="addToDisplay('2')">2</button>
+                    <button class="number"  onclick="addToDisplay('1')">1</button>
                     <button class="operator" onclick="addToDisplay('/')">/</button>
-                    <button class="operator" onclick="equal()">=</button> 
-                    <button id="reset" onclick="reset()">C</button>
+                    <button  onclick="addToDisplay('00')">00</button>
+                    <button class="number"  onclick="addToDisplay('0')">0</button> 
                     <button onclick="addToDisplay('.')">.</button>
-                    <button id="delete" onclick="dlt()">delete</button>
+                    <button class="operator" id="equal" onclick="equal()">=</button>
+                    <button id="reset" onclick="reset()">C</button>
+                    <button id="delete" onclick="dlt()">X</button>
                 </div>
             </div>
         </div>
