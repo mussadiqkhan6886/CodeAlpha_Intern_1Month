@@ -87,6 +87,7 @@ input{
     color: white;
     box-shadow: 1px 1px 5px black;
     border-radius: 4px;
+    transition: all 0.3s;
 }
 .buttons #delete{
     background-color: rgb(252, 92, 92);
