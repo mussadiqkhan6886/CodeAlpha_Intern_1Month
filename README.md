@@ -43,7 +43,7 @@ README.md
 
 ## 🚀 Live Demos
 🔗 Calculator : https://www.linkedin.com/posts/mussadiq-khan-2815aa34a_webdevelopment-javascript-internship-activity-7298634999086350336-Hb_M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFdMCwEBfQFTliGh_t8zm-IC8oYN68HoH2s
-🔗  
+🔗  Image Gallery: https://www.linkedin.com/posts/mussadiq-khan-2815aa34a_internship-webdevelopment-javascript-activity-7300421372508274688-kHgD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFdMCwEBfQFTliGh_t8zm-IC8oYN68HoH2s
 🔗
 🔗  
 
