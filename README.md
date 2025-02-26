@@ -42,7 +42,7 @@ README.md
 - Gained hands-on experience working on **real-world projects**
 
 ## 🚀 Live Demos
-🔗
+🔗 Calculator : https://www.linkedin.com/posts/mussadiq-khan-2815aa34a_webdevelopment-javascript-internship-activity-7298634999086350336-Hb_M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFdMCwEBfQFTliGh_t8zm-IC8oYN68HoH2s
 🔗  
 🔗
 🔗  
