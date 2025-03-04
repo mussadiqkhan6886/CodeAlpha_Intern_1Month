@@ -1,10 +1,12 @@
 :root{
     --bg-color-body: #D84040;
     --container-bg-color: #FFDCCC;
-    --header-bg-color: #A31D1D;
+    --footer-bg-color: rgb(104, 103, 103);
     --text-color: #F8F2DE;
     --song-author-color: #cfcfcf;
-    --body-bg: black;
+    --body-bg: rgb(253, 247, 247);
+    --box-bg: rgba(119, 119, 119, 0.451);
+    --main-box-bg: #91070746;
 }
 
 *{
@@ -18,13 +20,18 @@ body{
     color: white;
     position: relative;
     padding-bottom: 7rem;
-    background-color: var(--body-bg);
+    background: url(/CodeAlpha_MusicPlayer/background/jocelyn-morales-Xzgo7v0oKVk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    display: flex;
 }
 
 /* Footer */
 #footer{
     position: absolute;
-    background-color: var(--header-bg-color);
+    background-color: var(--footer-bg-color);
     width: 100%;
     text-align: center;
     color: var(--text-color);
@@ -50,20 +57,21 @@ body{
 
 #main{
    width: 100%;
+   background-color: rgba(109, 109, 109, 0.405);
 }
 
 /* container */
 
 .container{
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3em;
+    
 }
 
 .left{
-    background-color: rgba(211, 211, 211, 0.233);
+    background-color: var(--main-box-bg);
     padding: 1.5em;
     border-radius: 10px;
     text-align: center;
@@ -86,10 +94,10 @@ body{
 .controls div i{
     cursor: pointer;
     padding: 0.5em;
+    transition: all 0.3s;
 }
 .controls div i:hover{
-    background-color: #b8b8b823;
-    border-radius: 50%;
+    scale: 1.1;
 }
 .controls .mid{
     display: flex;
@@ -97,7 +105,7 @@ body{
     width: 55%;
     align-items: center;
 }
-.controls .mid .fa-play{
+.controls .mid #play{
     font-size: 1.7rem;
 }
 .song-details{
@@ -112,6 +120,7 @@ body{
     margin-bottom: 0.5em;
 }
 .range-control input[type="range"] {
+    cursor: pointer;
     -webkit-appearance: none;
     width: 100%;
     height: 4px;
@@ -134,9 +143,10 @@ body{
 
 /* imgs */
 .thumbnail{
-    background-color: #b8b8b846;
+    background-color: var(--box-bg);
     padding: 1em;
     border-radius: 10px;
+    margin-left: 10px;
 }
 .img-div{
     width: 150px;
@@ -164,3 +174,4 @@ body{
 
 
 /* Will fix range */
+/* Will add timing */
