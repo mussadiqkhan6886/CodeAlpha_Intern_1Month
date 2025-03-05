@@ -4,7 +4,6 @@
     --footer-bg-color: rgba(104, 103, 103, 0.732);
     --text-color: #F8F2DE;
     --song-author-color: #cfcfcf;
-    --body-bg: rgb(253, 247, 247);
     --box-bg: #adbbad79;
     --main-box-bg: #91070731;
 }
@@ -16,16 +15,17 @@
     font-family: Roboto;
 }
 body{
-    min-height: 100dvh;
+    min-height: 100vh;
     color: white;
     position: relative;
-    padding-bottom: 7rem;
     background: url(/CodeAlpha_MusicPlayer/background/jocelyn-morales-Xzgo7v0oKVk-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(4px);
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 body::before{
     content: '';
@@ -41,7 +41,6 @@ body::before{
 
 /* Footer */
 #footer{
-    position: absolute;
     background-color: var(--footer-bg-color);
     width: 100%;
     text-align: center;
@@ -71,6 +70,7 @@ body::before{
    min-height: 100dvh;
    background-color: rgba(109, 109, 109, 0.505);
    z-index: 1000;
+   flex: 1;
 }
 
 /* container */
@@ -89,9 +89,10 @@ body::before{
     text-align: center;
     margin-right: 2em;
     max-width: 450px;
-    min-width: 300px;
+    min-width: 320px;
     box-shadow: 1px 1px 5px rgba(231, 231, 231, 0.39),
     inset 1px 1px 5px darkred;
+
 }
 .current-song-img-div #current-song{
     border-radius: 10px;
@@ -184,11 +185,9 @@ body::before{
 #right-footer{
     display: flex;
     flex-direction: column;
-    
 }
 #right-footer .playlist{
     display: flex;
-    flex-wrap: wrap;
     margin-top: 15px;
     gap: 10px;
 }
@@ -214,7 +213,7 @@ body::before{
     padding: 1em;
     border-radius: 10px;
     margin-left: 10px;
-    max-width: 200px;
+    max-width: 12.5rem;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
     cursor: pointer;
     transition: all 0.3s;
