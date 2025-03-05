@@ -1,7 +1,7 @@
 :root{
     --bg-color-body: #D84040;
     --container-bg-color: #FFDCCC;
-    --footer-bg-color: rgb(104, 103, 103);
+    --footer-bg-color: rgba(104, 103, 103, 0.732);
     --text-color: #F8F2DE;
     --song-author-color: #cfcfcf;
     --body-bg: rgb(253, 247, 247);
@@ -16,7 +16,7 @@
     font-family: Roboto;
 }
 body{
-    min-height: 100vh;
+    min-height: 100dvh;
     color: white;
     position: relative;
     padding-bottom: 7rem;
@@ -68,6 +68,7 @@ body::before{
 
 #main{
    width: 100%;
+   min-height: 100dvh;
    background-color: rgba(109, 109, 109, 0.505);
    z-index: 1000;
 }
@@ -199,7 +200,7 @@ body::before{
 /* Right main */
 
 #right-main #heading{
-    font-size: 3.3rem;
+    font-size: 3.6rem;
 }
 #right-main #heading span{
     display: block;
