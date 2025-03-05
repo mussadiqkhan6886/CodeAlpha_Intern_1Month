@@ -208,6 +208,16 @@ body::before{
     font-weight: 900;
 }
 
+/* Play Icon */
+.playIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 /* imgs */
 .thumbnail{
     width: 100%;
@@ -216,11 +226,20 @@ body::before{
     border-radius: 10px;
     margin-left: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
-    cursor: pointer;
     transition: all 0.3s;
+    position: relative;
 }
-.thumbnail:hover{
-    transform: scale(1.1);
+.playIconAnimation{
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.5s;
+    animation: Icon 2s ease-in-out forwards;
+}
+@keyframes Icon {
+    100%{
+        width: 82%;
+        background-color: rgba(0, 0, 0, 0.308);
+    }
 }
 .img-div{
     width: 100%;
@@ -231,6 +250,7 @@ body::before{
     border-radius: 10px;
     object-fit: cover;
     object-position: left;
+    transition: all 0.3s;
 }
 
 

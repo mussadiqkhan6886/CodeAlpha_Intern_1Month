@@ -1,7 +1,21 @@
 const range = document.querySelector('#range');
 const playButton = document.querySelector('.fa-play');
 const song = document.querySelector('#song');
+const container = document.querySelectorAll('.thumbnail');
+const playIcon = document.querySelectorAll('.playIcon');
+const ImgDiv = document.querySelectorAll('img-div');
 range.value = 0;
+
+playIcon.forEach(icon => {
+    icon.addEventListener('mouseover', (e) => {
+        e.target.classList.add('playIconAnimation')
+    })
+})
+playIcon.forEach(icon => {
+    icon.addEventListener('mouseout', (e) => {
+        e.target.classList.remove('playIconAnimation')
+    })
+})
 
 // Play or pause the song when the play button is clicked
 playButton.addEventListener('click', () => {
@@ -25,3 +39,9 @@ range.addEventListener('input', () => {
     song.play();
     playButton.classList.replace('fa-play', 'fa-pause');
 });
+
+container.forEach(thumbnail => {
+    thumbnail.addEventListener('click', (e) => {
+        console.log(e.target);
+    })
+})
