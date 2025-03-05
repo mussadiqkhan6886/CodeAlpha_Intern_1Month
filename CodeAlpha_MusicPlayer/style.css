@@ -244,7 +244,11 @@ body::before{
     #right-footer{
         width: 90%;
     }
+    .right header nav{
+        width: 30%;
+    }
 }
+
 
 
 /* Will fix range */
