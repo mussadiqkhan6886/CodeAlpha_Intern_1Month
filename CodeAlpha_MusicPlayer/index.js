@@ -67,7 +67,13 @@ playIcon.forEach(icon => {
             currentSongName.innerHTML = 'Itna na Mujh sai Pyar badha';
             currentAuthor.innerHTML = 'Talat Mahmood';
             currentSongImage.src = "thumbnails/pyar badha.jpg";
-
+        }else if(id == 'lewanilewani'){
+            imgElement.src = tempImgCurrent;
+            pElement.textContent = tempSongName;
+            song.src = "songs/lewanilewani.mp3";
+            currentSongName.innerHTML = 'Lewani Lewani';
+            currentAuthor.innerHTML = 'Ijaz Ufaq';
+            currentSongImage.src = "thumbnails/lewanilewani.jpg";
         }
         range.value = 0;
         song.play();

@@ -88,16 +88,18 @@ body::before{
     border-radius: 10px;
     text-align: center;
     margin-right: 2em;
-    max-width: 450px;
+    max-width: 320px;
     min-width: 320px;
+    height: 499px;
     box-shadow: 1px 1px 5px rgba(231, 231, 231, 0.39),
     inset 1px 1px 5px darkred;
-
+    
 }
 .current-song-img-div #current-song{
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
+    object-fit: cover;
 } 
 
 .controls{
